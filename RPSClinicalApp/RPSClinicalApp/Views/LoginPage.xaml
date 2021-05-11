@@ -21,7 +21,7 @@
                            PlaceholderColor="Gray" HeightRequest="40"   
                            IsPassword="True"  
                            TextColor="Navy"/>
-                    <Button Text="Submit" Command="{Binding SubmitCommand}"  BackgroundColor="Ivory" TextColor="Coral">
+                    <Button Text="Submit" Command="{Binding SubmitCommand}"  BackgroundColor="Ivory" TextColor="DeepPink" FontSize="Medium" FontAttributes="Bold" >
                         </Button>       
                 </StackLayout>
             </Frame>

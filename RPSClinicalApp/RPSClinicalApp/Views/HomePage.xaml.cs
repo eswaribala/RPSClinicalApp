@@ -23,7 +23,7 @@ namespace RPSClinicalApp.Views
         }
         private void ICU_Tapped(object sender, EventArgs e)
         {
-
+            this.Navigation.PushAsync(new ICUPage());
         }
         private void XRAY_Tapped(object sender, EventArgs e)
         {

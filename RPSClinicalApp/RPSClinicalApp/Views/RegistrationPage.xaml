@@ -20,12 +20,12 @@
                     <Editor x:Name="Phone"></Editor>
 
                     <StackLayout Orientation="Horizontal">
-                        <Button Text="Sign Up" Clicked="SignUp_Clicked"></Button>
-                        <Button Text="show" Clicked="Show_Clicked"></Button>
+                            <Button Text="Sign Up" Clicked="SignUp_Clicked" TextColor="DeepPink" FontSize="Medium" FontAttributes="Bold" ></Button>
+                            <Button Text="show" Clicked="Show_Clicked" TextColor="DeepPink" FontSize="Medium" FontAttributes="Bold" ></Button>
                     </StackLayout>
                 </StackLayout>
             </Frame>
-            <Label Text="Already have account? Sign In" BackgroundColor="Navy" TextColor="white" >
+            <Label Text="Already have account? Sign In" BackgroundColor="Ivory" TextColor="DeepPink" FontSize="Medium" FontAttributes="Bold" >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </Label.GestureRecognizers>
