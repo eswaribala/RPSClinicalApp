@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RPSClinicalApp.Views.RegistrationPage" BackgroundColor="Ivory">
     <ContentPage.Content>
-        <StackLayout Margin="2">
+        <StackLayout Margin="5">
+            <Image Source="logo.jpg" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="50" HeightRequest="50"/>
             <Frame BackgroundColor="Coral" HasShadow="False">
                 <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                     <Entry x:Name="FirstName"  Placeholder="First Name" PlaceholderColor="LightGray"></Entry>
@@ -22,7 +23,11 @@
                     </StackLayout>
                 </StackLayout>
             </Frame>
-            
+            <Label Text="Already have account? Sign In" BackgroundColor="Navy" TextColor="white" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
