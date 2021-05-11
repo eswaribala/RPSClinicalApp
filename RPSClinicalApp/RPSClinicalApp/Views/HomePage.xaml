@@ -2,6 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RPSClinicalApp.Views.HomePage">
+    <ContentPage.Resources>
+        <Style  Class="DepartmentStyle" TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -26,42 +35,42 @@
             <BoxView BackgroundColor="DarkOrange" Grid.Row="2" Grid.Column="1"></BoxView>
             <BoxView BackgroundColor="DarkSlateBlue" Grid.Row="3" Grid.Column="0"></BoxView>
             <BoxView BackgroundColor="DeepSkyBlue" Grid.Row="3" Grid.Column="1"></BoxView>
-            <Label Text="OPD" Grid.Row="0" Grid.Column="0">
+            <Label Text="OPD" Grid.Row="0" Grid.Column="0" StyleClass="DepartmentStyle">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OPD_Tapped"></TapGestureRecognizer>
                 </Label.GestureRecognizers>
             </Label>
-            <Label Text="ICU" Grid.Row="0" Grid.Column="1">
+            <Label Text="ICU" Grid.Row="0" Grid.Column="1"  StyleClass="DepartmentStyle">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="ICU_Tapped"></TapGestureRecognizer>
                 </Label.GestureRecognizers>
             </Label>
-            <Label Text="XRAY" Grid.Row="1" Grid.Column="0">
+            <Label Text="XRAY" Grid.Row="1" Grid.Column="0"  StyleClass="DepartmentStyle">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="XRAY_Tapped"></TapGestureRecognizer>
                 </Label.GestureRecognizers>
             </Label>
-            <Label Text="Pharmacy" Grid.Row="1" Grid.Column="1">
+            <Label Text="Pharmacy" Grid.Row="1" Grid.Column="1"  StyleClass="DepartmentStyle">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Pharmacy_Tapped"></TapGestureRecognizer>
                 </Label.GestureRecognizers>
             </Label>
-            <Label Text="BloodBank" Grid.Row="2" Grid.Column="0">
+            <Label Text="BloodBank" Grid.Row="2" Grid.Column="0"  StyleClass="DepartmentStyle">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="BloodBank_Tapped"></TapGestureRecognizer>
                 </Label.GestureRecognizers>
             </Label>
-            <Label Text="Surgery" Grid.Row="2" Grid.Column="1">
+            <Label Text="Surgery" Grid.Row="2" Grid.Column="1"  StyleClass="DepartmentStyle">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Surgery_Tapped"></TapGestureRecognizer>
                 </Label.GestureRecognizers>
             </Label>
-            <Label Text="Account" Grid.Row="3" Grid.Column="0">
+            <Label Text="Account" Grid.Row="3" Grid.Column="0"  StyleClass="DepartmentStyle">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Account_Tapped"></TapGestureRecognizer>
                 </Label.GestureRecognizers>
             </Label>
-            <Label Text="Reception" Grid.Row="3" Grid.Column="1">
+            <Label Text="Reception" Grid.Row="3" Grid.Column="1"  StyleClass="DepartmentStyle">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Reception_Tapped"></TapGestureRecognizer>
                 </Label.GestureRecognizers>

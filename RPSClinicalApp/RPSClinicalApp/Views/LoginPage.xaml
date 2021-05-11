@@ -4,7 +4,7 @@
              x:Class="RPSClinicalApp.LoginPage" BackgroundColor="Ivory">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Spacing="40" Padding="30">
-            <Label Text="New User?SignUp">
+            <Label Text="New User?SignUp" TextColor="DeepPink" FontSize="Large" FontAttributes="Bold">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">                        
                     </TapGestureRecognizer>
