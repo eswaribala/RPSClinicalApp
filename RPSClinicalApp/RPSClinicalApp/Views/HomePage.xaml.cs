@@ -16,5 +16,39 @@ namespace RPSClinicalApp.Views
         {
             InitializeComponent();
         }
+
+        private void OPD_Tapped(object sender, EventArgs e)
+        {
+
+        }
+        private void ICU_Tapped(object sender, EventArgs e)
+        {
+
+        }
+        private void XRAY_Tapped(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new XRayPage());
+        }
+        private void Pharmacy_Tapped(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BloodBank_Tapped(object sender, EventArgs e)
+        {
+
+        }
+        private void Surgery_Tapped(object sender, EventArgs e)
+        {
+
+        }
+        private void Account_Tapped(object sender, EventArgs e)
+        {
+
+        }
+        private void Reception_Tapped(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,7 +26,47 @@
             <BoxView BackgroundColor="DarkOrange" Grid.Row="2" Grid.Column="1"></BoxView>
             <BoxView BackgroundColor="DarkSlateBlue" Grid.Row="3" Grid.Column="0"></BoxView>
             <BoxView BackgroundColor="DeepSkyBlue" Grid.Row="3" Grid.Column="1"></BoxView>
-          
+            <Label Text="OPD" Grid.Row="0" Grid.Column="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OPD_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="ICU" Grid.Row="0" Grid.Column="1">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ICU_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="XRAY" Grid.Row="1" Grid.Column="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="XRAY_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="Pharmacy" Grid.Row="1" Grid.Column="1">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Pharmacy_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="BloodBank" Grid.Row="2" Grid.Column="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BloodBank_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="Surgery" Grid.Row="2" Grid.Column="1">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Surgery_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="Account" Grid.Row="3" Grid.Column="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Account_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="Reception" Grid.Row="3" Grid.Column="1">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Reception_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>
