@@ -16,5 +16,10 @@ namespace RPSClinicalApp.Views
         {
             InitializeComponent();
         }
+
+        private void Camera_Pressed(object sender, EventArgs e)
+        {
+
+        }
     }
 }
