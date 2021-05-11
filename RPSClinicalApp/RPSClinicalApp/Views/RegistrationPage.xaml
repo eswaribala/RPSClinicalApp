@@ -3,14 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RPSClinicalApp.Views.RegistrationPage" BackgroundColor="Ivory">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout Margin="5">
+         
             <Image Source="logo.jpg" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="50" HeightRequest="50"/>
             <Frame BackgroundColor="Coral" HasShadow="False">
                 <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                     <Entry x:Name="FirstName"  Placeholder="First Name" PlaceholderColor="LightGray"></Entry>
                     <Entry x:Name="LastName"  Placeholder="Last Name" PlaceholderColor="LightGray"></Entry>
                     <Entry x:Name="Password"  Placeholder="*************" PlaceholderColor="LightGray" IsPassword="True"></Entry>
-                    <Entry x:Name="ConfirmPassword"  Placeholder="Confirm Password" PlaceholderColor="LightGray" IsPassword="True"></Entry>
+                    <Entry x:Name="ConfirmPassword"  Placeholder="********" PlaceholderColor="LightGray" IsPassword="True"></Entry>
                     <Entry x:Name="Email"  Placeholder="sample@rps.com" PlaceholderColor="LightGray"></Entry>
                     <Label Text="DOB"></Label>
                     <DatePicker x:Name="DOB"></DatePicker>
@@ -28,6 +30,8 @@
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </Label.GestureRecognizers>
             </Label>
+            
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

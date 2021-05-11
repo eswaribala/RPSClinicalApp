@@ -3,10 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RPSClinicalApp.Views.HomePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*">                    
+                </RowDefinition>
+                <RowDefinition Height="*">
+                </RowDefinition>
+                <RowDefinition Height="*">
+                </RowDefinition>
+                <RowDefinition Height="*">
+                </RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <BoxView BackgroundColor="Red" Grid.Row="0" Grid.Column="0"></BoxView>
+            <BoxView BackgroundColor="Green" Grid.Row="0" Grid.Column="1"></BoxView>
+            <BoxView BackgroundColor="Blue" Grid.Row="1" Grid.Column="0"></BoxView>
+            <BoxView BackgroundColor="DeepPink" Grid.Row="1" Grid.Column="1"></BoxView>
+            <BoxView BackgroundColor="DarkMagenta" Grid.Row="2" Grid.Column="0"></BoxView>
+            <BoxView BackgroundColor="DarkOrange" Grid.Row="2" Grid.Column="1"></BoxView>
+            <BoxView BackgroundColor="DarkSlateBlue" Grid.Row="3" Grid.Column="0"></BoxView>
+            <BoxView BackgroundColor="DeepSkyBlue" Grid.Row="3" Grid.Column="1"></BoxView>
+          
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
