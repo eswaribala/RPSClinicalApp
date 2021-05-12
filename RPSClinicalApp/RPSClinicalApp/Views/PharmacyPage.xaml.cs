@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPSClinicalApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,8 @@ namespace RPSClinicalApp.Views
         public PharmacyPage()
         {
             InitializeComponent();
+            var vm = new PharmacyViewModel();
+            this.BindingContext = vm;
         }
     }
 }
