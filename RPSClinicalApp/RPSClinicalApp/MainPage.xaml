@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RPSClinicalApp.MainPage" BackgroundColor="Ivory">
+    
+
     <ContentPage.Resources>
         <Style Class="LogoStyle"  TargetType="Image">
             <Setter Property="Margin" Value="50"/>
@@ -11,15 +13,27 @@
             <Setter Property="FontAttributes" Value="Bold"/>
             <Setter Property="FontSize" Value="Large"/>
         </Style>
-    </ContentPage.Resources> 
-    
-    <StackLayout>
+    </ContentPage.Resources>
+
+    <StackLayout Style="{DynamicResource MainStackLayout}">
         <Image Source="logo.jpg" VerticalOptions="Center" HorizontalOptions="Center"
                StyleClass="LogoStyle"> 
 
         </Image>
         <Label Text="Global Health Care" VerticalOptions="Center" 
-               HorizontalOptions="Center" StyleClass="OrgStyle"></Label>
+               HorizontalOptions="Center" Style="{DynamicResource LabelPageHeading}"></Label>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Theme: " VerticalOptions="Center" />
+            <Picker x:Name="themePicker" Title="Select a theme" HorizontalOptions="Start">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Default</x:String>
+                        <x:String>Pink</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+
     </StackLayout>
 
 </ContentPage>

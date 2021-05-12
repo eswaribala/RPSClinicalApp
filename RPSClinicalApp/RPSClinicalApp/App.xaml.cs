@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPSClinicalApp.Themes;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,8 +9,8 @@ namespace RPSClinicalApp
     {
         public App()
         {
-            //InitializeComponent();
-           // ThemeManager.ChangeTheme("Default");
+            InitializeComponent();
+            ThemeManager.ChangeTheme("Default");
             MainPage = new NavigationPage(new MainPage());
         }
 

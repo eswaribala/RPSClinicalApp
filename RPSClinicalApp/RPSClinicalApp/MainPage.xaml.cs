@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPSClinicalApp.Themes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace RPSClinicalApp
         public MainPage()
         {
             InitializeComponent();
+            themePicker.SelectedIndexChanged += ThemePicker_SelectedIndexChanged;
         }
 
         protected async override void OnAppearing()
@@ -21,6 +23,10 @@ namespace RPSClinicalApp
             await Task.Delay(10000);
             await this.Navigation.PushAsync(new LoginPage());
 
+        }
+        private void ThemePicker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ThemeManager.ChangeTheme(themePicker.SelectedItem.ToString());
         }
     }
 }
