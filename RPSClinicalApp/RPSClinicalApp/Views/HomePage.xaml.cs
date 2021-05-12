@@ -44,7 +44,7 @@ namespace RPSClinicalApp.Views
         }
         private void Account_Tapped(object sender, EventArgs e)
         {
-
+            this.Navigation.PushAsync(new AccountPage());
         }
         private void Reception_Tapped(object sender, EventArgs e)
         {

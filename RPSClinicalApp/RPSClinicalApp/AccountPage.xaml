@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RPSClinicalApp.AccountPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+
+            <Image Margin="0,50,0,0" x:Name="imgBanner" Source="banner.jpg" ></Image>
+            <Image Margin="0,0,0,10" x:Name="imgXamarinEssential" Source="xamessential.png" ></Image>
+            <Label Margin="0,0,0,10" FontAttributes="Bold" FontSize="Large" TextColor="#CA6F1E" HorizontalTextAlignment="Center" Text="Appinfo"></Label>
+            <Label HorizontalOptions="Center" x:Name="lblNetworkStatus"></Label>
+            <Label HorizontalOptions="Center" x:Name="lblNetworkProfile"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
