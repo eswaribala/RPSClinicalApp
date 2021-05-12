@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RPSClinicalApp.LoginPage" BackgroundColor="Ivory">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Spacing="40" Padding="30">
-            <Label Text="New User?SignUp" TextColor="DeepPink" FontSize="Large" FontAttributes="Bold">
+        <StackLayout Orientation="Vertical" Spacing="40" Padding="30" Style="{DynamicResource MainStackLayout}">
+            <Label Text="New User?SignUp" Style="{DynamicResource LabelSubHeading}">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">                        
                     </TapGestureRecognizer>
@@ -21,8 +21,21 @@
                            PlaceholderColor="Gray" HeightRequest="40"   
                            IsPassword="True"  
                            TextColor="Navy"/>
-                    <Button Text="Submit" Command="{Binding SubmitCommand}"  BackgroundColor="Ivory" TextColor="DeepPink" FontSize="Medium" FontAttributes="Bold" >
-                        </Button>       
+                    <Button Text="Submit" Command="{Binding SubmitCommand}"  Style="{DynamicResource ButtonSecondary}" FontSize="Medium" FontAttributes="Bold" >
+                        </Button>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Theme: " VerticalOptions="Center" />
+                        <Picker x:Name="themePicker" Title="Select a theme" HorizontalOptions="Start">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Default</x:String>
+                                    <x:String>LawnGreen</x:String>
+                                    <x:String>Violet</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
                 </StackLayout>
             </Frame>
         </StackLayout>

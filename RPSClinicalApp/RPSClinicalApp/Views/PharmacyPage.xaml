@@ -8,13 +8,16 @@
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout>
-                            <Frame  BorderColor="Gray" Margin="8" HasShadow="True" HeightRequest="250" CornerRadius="20" VerticalOptions="CenterAndExpand">
+                            <Frame  BorderColor="Gray" BackgroundColor="Lavender" Margin="8" HasShadow="True" HeightRequest="250" CornerRadius="20" VerticalOptions="CenterAndExpand">
                                 <StackLayout>
                                     <Image Source="{Binding ImagePath}"> 
                                         
                                     </Image>
-                                    <Label Text="{Binding Title}" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center">
+                                    <Label Text="{Binding Title}" FontSize="24" FontAttributes="Bold" TextColor="LawnGreen" HorizontalTextAlignment="Center">
                                         
+                                    </Label>
+                                    <Label Text="{Binding Description}" FontSize="24" FontAttributes="Bold" TextColor="DeepPink" HorizontalTextAlignment="Center">
+
                                     </Label>
                                 </StackLayout>
                             </Frame>

@@ -1,4 +1,5 @@
-﻿using RPSClinicalApp.ViewModels;
+﻿using RPSClinicalApp.Themes;
+using RPSClinicalApp.ViewModels;
 using RPSClinicalApp.Views;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,9 @@ namespace RPSClinicalApp
     {
         public LoginPage()
         {
-           // InitializeComponent();
-
+            InitializeComponent();
+           
+            themePicker.SelectedIndexChanged += ThemePicker_SelectedIndexChanged;
             var vm = new LoginViewModel();
             this.BindingContext = vm;
             vm.InvalidLoginPrompt += () => DisplayAlert("Error", "Invalid Login, try again", "OK");
@@ -26,7 +28,7 @@ namespace RPSClinicalApp
                 this.Navigation.PushAsync(new HomePage());
             };
 
-            InitializeComponent();
+           // InitializeComponent();
             Email.Completed += (object sender, EventArgs e) =>
             {
                 Password.Focus();
@@ -37,7 +39,10 @@ namespace RPSClinicalApp
                 vm.SubmitCommand.Execute(null);
             };
         }
-
+        private void ThemePicker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ThemeManager.ChangeTheme(themePicker.SelectedItem.ToString());
+        }
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             this.Navigation.PushAsync(new RegistrationPage());

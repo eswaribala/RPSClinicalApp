@@ -5,6 +5,15 @@
     <ContentPage.Content>
         <StackLayout>
             <Image x:Name="Patient" Source="patient.jpg" RotationX="50"></Image>
+
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+
+                <Image Margin="0,50,0,0" x:Name="imgBanner" Source="banner.jpg" ></Image>
+                <Image Margin="0,0,0,10" x:Name="imgXamarinEssential" Source="xamessential.png" ></Image>
+                <Label Margin="0,0,0,10" FontAttributes="Bold" FontSize="Large" TextColor="#CA6F1E" HorizontalTextAlignment="Center" Text="Appinfo"></Label>
+                <Label HorizontalOptions="Center" x:Name="lblNetworkStatus"></Label>
+                <Label HorizontalOptions="Center" x:Name="lblNetworkProfile"></Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
