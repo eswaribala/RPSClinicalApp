@@ -31,7 +31,7 @@ namespace RPSClinicalApp.Views
         }
         private void Pharmacy_Tapped(object sender, EventArgs e)
         {
-
+            this.Navigation.PushAsync(new PharmacyPage());
         }
 
         private void BloodBank_Tapped(object sender, EventArgs e)
