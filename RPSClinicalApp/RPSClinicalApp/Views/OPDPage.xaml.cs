@@ -22,7 +22,8 @@ namespace RPSClinicalApp.Views
         }
         private async void LoadData()
         {
-            ObservableCollection<MedicalCollege> MedicalColleges = await new APIService().RefreshAsyncData();
+            ObservableCollection<MedicalCollege> MedicalColleges = 
+                await new APIService().RefreshAsyncData();
             MedicalCollegeList.ItemsSource = MedicalColleges;
         }
     }

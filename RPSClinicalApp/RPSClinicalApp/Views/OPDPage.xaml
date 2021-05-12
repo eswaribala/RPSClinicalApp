@@ -11,8 +11,6 @@
                     <DataTemplate>
 
                         <ViewCell>
-
-
                             <StackLayout Orientation="Vertical" Padding="8,0,8,0">
 
                                 <Label  Text="{Binding State}" TextColor="Navy" FontSize="14" VerticalOptions="StartAndExpand" LineBreakMode="TailTruncation" />
