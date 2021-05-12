@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RPSClinicalApp.Views.OPDPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Ivory">
+            <Label Text="Medical Colleges Data" BackgroundColor="SlateBlue" FontSize="18" FontAttributes="Bold" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+            <ListView  x:Name="MedicalCollegeList"  RowHeight="260" VerticalScrollBarVisibility="Always">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+
+
+                            <StackLayout Orientation="Vertical" Padding="8,0,8,0">
+
+                                <Label  Text="{Binding State}" TextColor="Navy" FontSize="14" VerticalOptions="StartAndExpand" LineBreakMode="TailTruncation" />
+                                <Label Text="{Binding City}" TextColor="Navy" VerticalOptions="StartAndExpand" LineBreakMode="TailTruncation" />
+                                <Label Text="{Binding Name}" TextColor="Navy" FontSize="14" VerticalOptions="StartAndExpand" LineBreakMode="TailTruncation" />
+                                <Label Text="{Binding Ownership}" TextColor="Navy" VerticalOptions="StartAndExpand" LineBreakMode="TailTruncation" />
+                                <Label Text="{Binding AdmissionCapacity}" TextColor="Navy" VerticalOptions="StartAndExpand" LineBreakMode="TailTruncation" />
+                                <Label Text="{Binding HospitalBeds}" TextColor="Navy" VerticalOptions="StartAndExpand" LineBreakMode="TailTruncation" />
+
+                            </StackLayout>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

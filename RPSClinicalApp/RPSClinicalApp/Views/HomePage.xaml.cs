@@ -19,7 +19,7 @@ namespace RPSClinicalApp.Views
 
         private void OPD_Tapped(object sender, EventArgs e)
         {
-
+            this.Navigation.PushAsync(new OPDPage());
         }
         private void ICU_Tapped(object sender, EventArgs e)
         {
