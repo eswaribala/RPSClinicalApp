@@ -22,7 +22,7 @@
         </Image>
         <Label Text="Global Health Care" VerticalOptions="Center" 
                HorizontalOptions="Center" Style="{DynamicResource LabelPageHeading}"></Label>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Vertical">
             <Label Text="Theme: " VerticalOptions="Center" />
             <Picker x:Name="themePicker" Title="Select a theme" HorizontalOptions="Start">
                 <Picker.ItemsSource>
