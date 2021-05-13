@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RPSClinicalApp.SurgeryPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="5">
+
+                <Image Source="logo.jpg" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="50" HeightRequest="50"/>
+                <Frame BackgroundColor="Coral" HasShadow="False">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Entry x:Name="FirstName"  Placeholder="First Name" PlaceholderColor="LightGray"></Entry>
+                        <Entry x:Name="LastName"  Placeholder="Last Name" PlaceholderColor="LightGray"></Entry>
+                        <Entry x:Name="Password"  Placeholder="*************" PlaceholderColor="LightGray" IsPassword="True"></Entry>
+                        <Entry x:Name="ConfirmPassword"  Placeholder="********" PlaceholderColor="LightGray" IsPassword="True"></Entry>
+                        <Entry x:Name="Email"  Placeholder="sample@rps.com" PlaceholderColor="LightGray"></Entry>
+                        <Label Text="DOB"></Label>
+                        <DatePicker x:Name="DOB"></DatePicker>
+                        <Label Text="Phone"></Label>
+                        <Editor x:Name="Phone"></Editor>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="Sign Up" Clicked="SignUp_Clicked" TextColor="DeepPink" FontSize="Medium" FontAttributes="Bold" ></Button>
+                            <Button Text="show" Clicked="Show_Clicked" TextColor="DeepPink" FontSize="Medium" FontAttributes="Bold" ></Button>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

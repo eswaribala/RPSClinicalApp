@@ -17,6 +17,7 @@ namespace RPSClinicalApp
         {
             InitializeComponent();
             var vm = new BloodBankViewModel();
+                
             this.BindingContext = vm;
         }
     }

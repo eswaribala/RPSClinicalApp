@@ -40,7 +40,7 @@ namespace RPSClinicalApp.Views
         }
         private void Surgery_Tapped(object sender, EventArgs e)
         {
-
+            this.Navigation.PushAsync(new SurgeryPage());
         }
         private void Account_Tapped(object sender, EventArgs e)
         {
@@ -48,7 +48,7 @@ namespace RPSClinicalApp.Views
         }
         private void Reception_Tapped(object sender, EventArgs e)
         {
-
+            this.Navigation.PushAsync(new ReceptionPage());
         }
     }
 }
