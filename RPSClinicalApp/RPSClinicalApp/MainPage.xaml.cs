@@ -1,4 +1,5 @@
-﻿using RPSClinicalApp.Themes;
+﻿using RPSClinicalApp.Helpers;
+using RPSClinicalApp.Themes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace RPSClinicalApp
         public MainPage()
         {
             InitializeComponent();
+            IPAddress.Text = DependencyService.Get<INetService>().ConvertHostIP();
             themePicker.SelectedIndexChanged += ThemePicker_SelectedIndexChanged;
         }
 

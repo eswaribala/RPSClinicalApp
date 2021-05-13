@@ -16,6 +16,7 @@
     </ContentPage.Resources>
 
     <StackLayout Style="{DynamicResource MainStackLayout}">
+        <Label x:Name="IPAddress" TextColor="LawnGreen" FontSize="36"/>
         <Image Source="logo.jpg" VerticalOptions="Center" HorizontalOptions="Center"
                StyleClass="LogoStyle"> 
 
