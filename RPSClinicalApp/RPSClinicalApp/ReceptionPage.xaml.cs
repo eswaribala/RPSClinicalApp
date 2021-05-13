@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -24,6 +24,20 @@ namespace RPSClinicalApp
                 Phone.Text = Application.Current.Properties["Phone"].ToString();
 
             }
+        }
+
+        private async void Share_Clicked(object sender, EventArgs e)
+        {
+
+            await ShareText("Hi");
+        }
+        public async Task ShareText(string text)
+        {
+            await Share.RequestAsync(new ShareTextRequest
+            {
+                Text = text,
+                Title = "Share Text"
+            });
         }
     }
 }

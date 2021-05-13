@@ -9,6 +9,10 @@
             <Label x:Name="Email"></Label>
             <Label x:Name="Phone"></Label>
             <Label x:Name="DOB"></Label>
+            <StackLayout>
+                <Button Text="ShareRequest" Clicked="Share_Clicked"/>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
