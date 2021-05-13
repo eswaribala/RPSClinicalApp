@@ -29,6 +29,7 @@
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Default</x:String>
                         <x:String>Pink</x:String>
+                        <x:String>Violet</x:String>
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
