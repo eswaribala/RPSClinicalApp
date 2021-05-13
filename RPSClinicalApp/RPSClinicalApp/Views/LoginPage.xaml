@@ -21,7 +21,7 @@
                            PlaceholderColor="Gray" HeightRequest="40"   
                            IsPassword="True"  
                            TextColor="Navy"/>
-                    <Button Text="Submit" Command="{Binding SubmitCommand}"  BackgroundColor="LawnGreen" TextColor="White" FontSize="Medium" FontAttributes="Bold" >
+                    <Button Text="Submit" Command="{Binding SubmitCommand}"   TextColor="White" FontSize="Medium" FontAttributes="Bold" >
                         </Button>
 
                     

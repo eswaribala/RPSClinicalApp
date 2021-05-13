@@ -36,7 +36,7 @@ namespace RPSClinicalApp.Views
 
         private void BloodBank_Tapped(object sender, EventArgs e)
         {
-
+            this.Navigation.PushAsync(new BloodBankPage());
         }
         private void Surgery_Tapped(object sender, EventArgs e)
         {
